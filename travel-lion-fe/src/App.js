@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <GlobalStyles />
-      <MyPageMain />
+      <AccountManage />
     </>
   );
 }

@@ -1,9 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import MyPageHeader from './MyPageHeader';
 // 변경 버튼 요상한데 가있어서 다시 해야해염 호호 히히 ..
+
 const AccountManage = () => {
   return (
     <>
+      <MyPageHeader />
       <Container>
         <ProfileImg />
         <div>
@@ -26,7 +29,9 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   font-family: Pretendard;
-  margin-top: 52px;
+  width: 390px;
+  margin: auto;
+  position: relative;
   gap: 25px;
 `;
 
@@ -44,7 +49,6 @@ const Text = styled.div`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-
   margin-bottom: 7px;
 `;
 
@@ -53,12 +57,10 @@ const InputWrapper = styled.div`
   width: 328px;
   height: 54px;
   padding: 15px 18px 14px 18px;
-  justify-content: space-between;
   align-items: center;
   gap: 208px;
   flex-shrink: 0;
   box-sizing: border-box;
-
   border-radius: 8px;
   background: #efefef;
 `;
